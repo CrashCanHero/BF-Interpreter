@@ -25,8 +25,8 @@ namespace BrainfuckInterpreter {
                 Console.WriteLine("File name:");
                 fileName = Console.ReadLine();
 
-                if(File.Exists(System.Reflection.Assembly.GetExecutingAssembly().Location.Replace("\\BrainfuckCompiler.exe", "") + $"/{fileName}")) {
-                    Input = File.ReadAllText(System.Reflection.Assembly.GetExecutingAssembly().Location.Replace("\\BrainfuckCompiler.exe", "") + $"/{fileName}");
+                if(File.Exists(System.Reflection.Assembly.GetExecutingAssembly().Location.Replace("\\BrainfuckInterpreter.exe", "") + $"/{fileName}")) {
+                    Input = File.ReadAllText(System.Reflection.Assembly.GetExecutingAssembly().Location.Replace("\\BrainfuckInterpreter.exe", "") + $"/{fileName}");
                 }
             }
 
